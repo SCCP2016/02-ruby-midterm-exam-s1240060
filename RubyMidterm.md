@@ -99,7 +99,34 @@ dc?5ba
 AB5?CD
 b5?c
 AB?Cd
+
+
+str = gets
+str = str.chomp
+puts str
+puts str.length
+st_arr= str.split(//)
+idx=st_arr.length 
+while (idx >= 0) do
+    print st_arr[idx]
+    idx= idx -1
+end
+print "\n"
+puts str.upcase
+for i in 1..(st_arr.length.to_i-2) do
+    print st_arr[i]
+end
+print "\n"
+for i in 0..(st_arr.length.to_i) do
+    if(st_arr[i]=="a" ||st_arr[i]=="b" ||st_arr[i]=="c")
+        print st_arr[i].upcase
+    else
+        print st_arr[i]
+    end
+end
+print "\n"
 ```
+
 
 ## 5. 適切なプログラムを書け
 
@@ -150,7 +177,20 @@ dir1/ dir2/ dir3/
 ディレクトリ作成には、次の命令を使え。
 http://docs.ruby-lang.org/ja/2.1.0/method/Dir/s/mkdir.html 
 
+
+
 ```ruby
+
+name, num = gets.split
+num=num.to_i
+
+for i in 1..num do
+    if i%2==1 then 
+        Dir.mkdir(name+i.to_s,0705)
+    else
+        Dir.mkdir(name+i.to_s,0754)
+    end
+end
 
 ```
 
@@ -190,7 +230,41 @@ http://docs.ruby-lang.org/ja/2.1.0/method/Dir/s/mkdir.html
 ```
 
 ```ruby
+tab={
+"q" => "e",
+"t" => "p",
+"b" => "b",
+"n" => "w",
+"j" => "s",
+"u" => "t",
+"w" => "z",
+"c" => "v",
+"k" => "i",
+"d" => "r",
+"p" => "u",
+"h" => "q",
+"x" => "m",
+"z" => "x",
+"v" => "h",
+"l" => "k",
+"s" => "j",
+"i" => "a",
+"f" => "d",
+"r" => "y",
+"a" => "c",
+"m" => "n",
+"e" => "f",
+"y" => "o",
+"g" => "g",
+"o" => "l"
+}
 
+str= "lymmkuknidpbruimyjkk"
+str_arr= str.split(//)
+for i in 0..str_arr.length-1 do
+    print tab[str_arr[i]]
+end
+print "\n"
 ```
 
 ## 8. 適切なプログラムを書け
