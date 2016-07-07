@@ -180,7 +180,8 @@ http://docs.ruby-lang.org/ja/2.1.0/method/Dir/s/mkdir.html
 
 
 ```ruby
-
+# 0705 is drwx---r-x
+# 0754 is drwxr-xr--
 name, num = gets.split
 num=num.to_i
 
