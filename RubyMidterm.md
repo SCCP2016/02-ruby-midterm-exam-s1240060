@@ -230,6 +230,7 @@ end
 ```
 
 ```ruby
+# i use hash.
 tab={
 "q" => "e",
 "t" => "p",
