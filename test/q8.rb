@@ -7,10 +7,8 @@ else
     idx= woman_ls.length
 end
 for i in 0..idx-1 do
-    m_f = man_ls[i] # firstname
-    w_f = woman_ls[i] # firstname
-    m= m_f.gsub(/[A-Z]+/, ' \&').split(" ")
-    w= w_f.gsub(/[A-Z]+/, ' \&').split(" ")
+    m= man_ls[i].gsub(/[A-Z]+/, ' \&').split(" ")
+    w= woman_ls[i].gsub(/[A-Z]+/, ' \&').split(" ")
     puts m[0]+w[1]
 end
 
