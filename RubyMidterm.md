@@ -34,7 +34,7 @@ puts "Hello World"
 # 存在しない型
 Bool
 # 存在する型と具体例
-Fixnum : 100,1500
+Fixnum : 100
 Bignum : 99999999999999999999999999999999999999999999999
 Float : 34.87
 String : "aaaa"
