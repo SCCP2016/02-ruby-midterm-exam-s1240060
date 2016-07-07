@@ -182,6 +182,8 @@ http://docs.ruby-lang.org/ja/2.1.0/method/Dir/s/mkdir.html
 ```ruby
 # 0705 is drwx---r-x
 # 0754 is drwxr-xr--
+# パーミッションとは、読み取り、書き込み、実行の権限を与えるか否かである。
+# rは読み取り、wは書き込み、xは実行権限である。
 name, num = gets.split
 num=num.to_i
 
