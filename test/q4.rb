@@ -1,7 +1,7 @@
 
 str = gets
-str.chomp!
-puts str.chomp
+str = str.chomp
+puts str
 puts str.length
 st_arr= str.split(//)
 idx=st_arr.length 
@@ -11,10 +11,18 @@ while (idx >= 0) do
 end
 print "\n"
 puts str.upcase
-for i in 1..(st_arr.length.to_i) do
-    if (i < st_arr.length) then
-        print st_arr[i]
-    end
+for i in 1..(st_arr.length.to_i-2) do
+    print st_arr[i]
 end
 print "\n"
+for i in 0..(st_arr.length.to_i) do
+    if(st_arr[i]=="a" ||st_arr[i]=="b" ||st_arr[i]=="c")
+        print st_arr[i].upcase
+    else
+        print st_arr[i]
+    end
 
+
+
+end
+print "\n"
